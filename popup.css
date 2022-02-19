@@ -1,0 +1,31 @@
+body {
+  background-color: #EEEEEE;
+}
+
+h1 {
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+  display: inline;
+}
+
+a {
+  color: #0000FF;
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: bold;
+  font-family: 'Verdana';
+  font-size: 10px;
+}
+
+@font-face {
+  font-family: 'Courier New';
+  src: url(CourierNew.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Verdana';
+  src: url(Verdana.ttf);
+  font-weight: bold;
+}

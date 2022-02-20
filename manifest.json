@@ -1,6 +1,6 @@
 {
   "name": "Mspaintadventures.ru flash changer",
-  "description": "Подменивает флеш на страницах mspaintadventures.ru с флешем на видосы с ютуба!.Все права на Homestuck принадлежат Andrew Hussie.",
+  "description": "Подменивает флеш на страницах mspaintadventures.ru с флешем на видео с ютуба!",
   "version": "1.0",
   "manifest_version": 3,
   "permissions": ["tabs"],

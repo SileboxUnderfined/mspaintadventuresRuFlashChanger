@@ -1,2 +1,3 @@
 *.crx
-*.ttf
+fonts/
+*.zip

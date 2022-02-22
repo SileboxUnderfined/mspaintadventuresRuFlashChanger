@@ -20,12 +20,12 @@ a {
 
 @font-face {
   font-family: 'Courier New';
-  src: url(CourierNew.ttf);
+  src: url(fonts/CourierNew.ttf);
   font-weight: bold;
 }
 
 @font-face {
   font-family: 'Verdana';
-  src: url(Verdana.ttf);
+  src: url(fonts/Verdana.ttf);
   font-weight: bold;
 }

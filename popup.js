@@ -1,5 +1,9 @@
 const MAINURL = "https://www.mspaintadventures.ru/?s=6&p=";
 
+const MANIFEST = chrome.runtime.getManifest();
+const TITLE = `Mspaintadventures.ru flash changer version ${MANIFEST.version}  by Silent Box`;
+document.getElementById('title').innerText = TITLE;
+
 document.getElementById("nextPageButton").addEventListener("click",function(){
   chrome.tabs.query({active:true,currentWindow:true},function(tabs){
     if (tabs[0].url.indexOf(MAINURL) != -1) {

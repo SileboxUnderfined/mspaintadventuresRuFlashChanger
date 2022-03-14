@@ -4,7 +4,7 @@ function generateChangerObject() {
   let changerObject = document.createElement("iframe");
   let neededPage = new URLSearchParams(document.location.search).get("p");
   console.log(neededPage);
-  fetch(chrome.runtime.getURL("pages.json"))
+  fetch(chrome.runtime.getURL(`pages/${localStorage.getItem('player')}.json`))
   .then((response) => response.json())
   .then((json) => changerObject.src = json[neededPage] + '?autoplay=1&amp;');
   changerObject.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";

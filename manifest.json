@@ -1,11 +1,11 @@
 {
   "name": "Mspaintadventures.ru flash changer",
   "description": "Подменивает флеш на страницах mspaintadventures.ru с флешем на видео с ютуба!",
-  "version": "1.2",
+  "version": "1.3",
   "manifest_version": 3,
   "permissions": ["tabs"],
   "action": {
-    "default_popup": "popup.html"
+    "default_popup": "popup/popup.html"
   },
   "web_accessible_resources":[
     {
@@ -16,7 +16,35 @@
   "content_scripts":[
     {
       "matches":["https://www.mspaintadventures.ru/?s=6&p=*"],
-      "js":["flashChanger.js","fontChangerMobile.js", "serviceButtons.js", "playerChanger.js"]
+      "js":["js/flashChanger.js","js/fontChangerMobile.js", "js/creatorOfButtons.js", "js/serviceButtons.js", "js/playerChanger.js"]
+    },
+    {
+      "matches":["https://www.mspaintadventures.ru/?s=6&p=005774"],
+      "js":["pagescripts/5774.js"]
+    },
+    {
+      "matches":["https://www.mspaintadventures.ru/?s=6&p=005795"],
+      "js":["pagescripts/5795.js"]
+    },
+    {
+      "matches":["https://www.mspaintadventures.ru/?s=6&p=005836"],
+      "js":["pagescripts/5836.js"]
+    },
+    {
+      "matches":["https://www.mspaintadventures.ru/?s=6&p=005874"],
+      "js":["pagescripts/5874.js"]
+    },
+    {
+      "matches":["https://www.mspaintadventures.ru/?s=6&p=005902"],
+      "js":["pagescripts/5902.js"]
+    },
+    {
+      "matches":["https://www.mspaintadventures.ru/?s=6&p=005919"],
+      "js":["pagescripts/5919.js"]
+    },
+    {
+      "matches":["https://www.mspaintadventures.ru/?s=6&p=006000"],
+      "js":["pagescripts/6000.js"]
     }
   ],
   "icons": {

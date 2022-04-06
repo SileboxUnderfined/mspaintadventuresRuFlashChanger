@@ -74,6 +74,26 @@
       "matches":["https://www.mspaintadventures.ru/DOTA/"],
       "css":["css/DOTA.css"],
       "js":["js/creatorOfButtons.js","pagescripts/DOTA.js"]
+    },
+    {
+      "matches":["https://www.mspaintadventures.ru/?s=6&p=006720"],
+      "js":["pagescripts/6720.js"]
+    },
+    {
+      "matches":["https://www.mspaintadventures.ru/?s=6&p=006725"],
+      "js":["pagescripts/6725.js"]
+    },
+    {
+      "matches":["https://www.mspaintadventures.ru/?s=6&p=006934",
+        "https://www.mspaintadventures.ru/?s=6&p=006952",
+        "https://www.mspaintadventures.ru/?s=6&p=006970",
+        "https://www.mspaintadventures.ru/?s=6&p=006978",
+        "https://www.mspaintadventures.ru/?s=6&p=006984"],
+      "js":["pagescripts/6934.js"]
+    },
+    {
+      "matches":["https://www.mspaintadventures.ru/?s=6&p=007037"],
+      "js":["pagescripts/7037.js"]
     }
   ],
   "icons": {

@@ -1,7 +1,7 @@
 {
-  "name": "Mspaintadventures.ru flash changer",
-  "description": "Подменивает флеш на страницах mspaintadventures.ru с флешем на видео с ютуба!",
-  "version": "1.4",
+  "name": "MSPAEssentials",
+  "description": "плагин первой необходимости для чтения homestuck на mspaintadventures.ru",
+  "version": "2.0",
   "manifest_version": 3,
   "permissions": ["tabs"],
   "action": {
@@ -10,13 +10,14 @@
   "web_accessible_resources":[
     {
       "matches":["<all_urls>"],
-      "resources":["pages/youtube.json","pages/vk.json","css/mobileStyle.css","fonts/CourierNew.ttf","fonts/Verdana.ttf","fonts/Helvetica.otf","fonts/Arial.ttf","fonts/SansSerif.ttf"]
+      "resources":["pages/youtube.json","pages/vk.json","css/mobileStyle.css","fonts/CourierNew.ttf","fonts/Verdana.ttf","fonts/Helvetica.otf","fonts/Arial.ttf","fonts/SansSerif.ttf","audio/echidna.mp3"]
     }
   ],
   "content_scripts":[
     {
       "matches":["https://www.mspaintadventures.ru/?s=6&p=*"],
-      "js":["js/flashChanger.js","js/fontChangerMobile.js", "js/creatorOfButtons.js", "js/serviceButtons.js", "js/playerChanger.js"]
+      "js":["js/GeneratePlayerObject.js","js/flashChanger.js","js/fontChangerMobile.js", "js/creatorOfButtons.js", "js/serviceButtons.js", "js/playerChanger.js"],
+      "exclude_matches":["https://www.mspaintadventures.ru/?s=6&p=009535"]
     },
     {
       "matches":["https://www.mspaintadventures.ru/?s=6&p=005774"],
@@ -94,6 +95,84 @@
     {
       "matches":["https://www.mspaintadventures.ru/?s=6&p=007037"],
       "js":["pagescripts/7037.js"]
+    },
+    {
+      "matches":["https://www.mspaintadventures.ru/?s=6&p=007163"],
+      "js":["pagescripts/openboundPlayer.js","js/GeneratePlayerObject.js","pagescripts/7163.js"]
+    },
+    {
+      "matches":["https://www.mspaintadventures.ru/?s=6&p=007208"],
+      "js":["pagescripts/openboundPlayer.js","js/GeneratePlayerObject.js","pagescripts/7208.js"]
+    },
+    {
+      "matches":["https://www.mspaintadventures.ru/?s=6&p=007298"],
+      "js":["pagescripts/openboundPlayer.js","js/GeneratePlayerObject.js","pagescripts/7298.js"]
+    },
+    {
+      "matches":["https://www.mspaintadventures.ru/007395/"],
+      "js":["js/GeneratePlayerObject.js","pagescripts/7395.js"]
+    },
+    {
+      "matches":["https://www.mspaintadventures.ru/007680/007680.html"],
+      "js":["js/GeneratePlayerObject.js","pagescripts/7680.js"]
+    },
+    {
+      "matches":["https://www.mspaintadventures.ru/?s=6&p=008105"],
+      "js":["js/GeneratePlayerObject.js","pagescripts/8105.js"]
+    },
+    {
+      "matches":["https://www.mspaintadventures.ru/?s=6&p=008143"],
+      "js":["js/creatorOfButtons.js","pagescripts/8143.js"]
+    },
+    {
+      "matches":["https://www.mspaintadventures.ru/?s=6&p=008179"],
+      "js":["js/creatorOfButtons.js","pagescripts/8179.js"]
+    },
+    {
+      "matches":["https://www.mspaintadventures.ru/?s=6&p=008184"],
+      "js":["js/creatorOfButtons.js","pagescripts/8184.js"]
+    },
+    {
+      "matches":["https://www.mspaintadventures.ru/?s=6&p=008199"],
+      "js":["js/creatorOfButtons.js","pagescripts/8199.js"]
+    },
+    {
+      "matches":["https://www.mspaintadventures.ru/?s=6&p=008282"],
+      "js":["js/creatorOfButtons.js","pagescripts/8282.js"]
+    },
+    {
+      "matches":["https://www.mspaintadventures.ru/?s=6&p=008297"],
+      "js":["js/creatorOfButtons.js","pagescripts/8297.js"]
+    },
+    {
+      "matches":["https://www.mspaintadventures.ru/?s=6&p=008301"],
+      "js":["js/creatorOfButtons.js","pagescripts/8301.js"]
+    },
+    {
+      "matches":["https://www.mspaintadventures.ru/?s=6&p=008305"],
+      "js":["js/creatorOfButtons.js","pagescripts/8305.js"]
+    },
+    {
+      "matches":["https://www.mspaintadventures.ru/?s=6&p=008316"],
+      "js":["js/creatorOfButtons.js","pagescripts/8316.js"]
+    },
+    {
+      "matches":["https://www.mspaintadventures.ru/GAMEOVER/"],
+      "css":["css/mobileStyle.css","css/GAMEOVER.css"],
+      "js":["js/creatorOfButtons.js","js/GeneratePlayerObject.js","pagescripts/GAMEOVER.js"]
+    },
+    {
+      "matches":["http://www.mspaintadventures.com/shes8ack/"],
+      "css":["css/DOTA.css"],
+      "js":["js/creatorOfButtons.js","js/GeneratePlayerObject.js","pagescripts/shes8ack.js"]
+    },
+    {
+      "matches":["https://www.mspaintadventures.ru/?s=6&p=009535"],
+      "js":["pagescripts/9535.js"]
+    },
+    {
+      "matches":["https://www.mspaintadventures.ru/?s=6&p=009704"],
+      "js":["js/creatorOfButtons.js","pagescripts/9704.js"]
     }
   ],
   "icons": {

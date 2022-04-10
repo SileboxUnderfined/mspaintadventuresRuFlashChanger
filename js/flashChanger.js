@@ -1,23 +1,9 @@
 let flashObject = document.querySelector('[type="application/x-shockwave-flash"]');
 
-function generateChangerObject() {
-  let changerObject = document.createElement("iframe");
-  let neededPage = new URLSearchParams(document.location.search).get("p");
-  console.log(neededPage);
-  fetch(chrome.runtime.getURL(`pages/${localStorage.getItem('player')}.json`))
-  .then((response) => response.json())
-  .then((json) => changerObject.src = json[neededPage] + '?autoplay=1&amp;');
-  changerObject.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
-  changerObject.allowFullscreen = true;
-  changerObject.width = flashObject.width;
-  changerObject.height = flashObject.height;
-  return changerObject;
-};
-
 function main() {
   let nodee = flashObject.parentNode;
   console.log(flashObject);
-  let changerObject = generateChangerObject();
+  let changerObject = generateChangerObject(link="",width=flashObject.width,height=flashObject.height);
   nodee.replaceChild(changerObject,flashObject);
 };
 

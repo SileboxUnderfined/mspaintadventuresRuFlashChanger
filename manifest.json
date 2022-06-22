@@ -1,7 +1,7 @@
 {
   "name": "MSPAEssentials",
   "description": "плагин первой необходимости для чтения homestuck на mspaintadventures.ru",
-  "version": "2.0",
+  "version": "2.1",
   "manifest_version": 3,
   "permissions": ["tabs"],
   "action": {
@@ -162,7 +162,7 @@
       "js":["js/creatorOfButtons.js","js/GeneratePlayerObject.js","pagescripts/GAMEOVER.js"]
     },
     {
-      "matches":["http://www.mspaintadventures.com/shes8ack/"],
+      "matches":["https://www.mspaintadventures.ru/shes8ack/"],
       "css":["css/DOTA.css"],
       "js":["js/creatorOfButtons.js","js/GeneratePlayerObject.js","pagescripts/shes8ack.js"]
     },
@@ -173,6 +173,10 @@
     {
       "matches":["https://www.mspaintadventures.ru/?s=6&p=009704"],
       "js":["js/creatorOfButtons.js","pagescripts/9704.js"]
+    },
+    {
+      "matches":["https://www.mspaintadventures.ru/?s=6&p=009348"],
+      "js":["pagescripts/9348.js"]
     }
   ],
   "icons": {

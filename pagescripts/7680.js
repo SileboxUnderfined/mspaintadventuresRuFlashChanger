@@ -6,5 +6,5 @@ if (localStorage.getItem('player') == "vk") {
     nodee.replaceChild(generateChangerObject(link="",450,650),flashObject);
 };
 setTimeout(function(){
-    document.location.href = "https://www.mspaintadventures.ru/?s=6&p=007396";
+    document.location.href = "https://www.mspaintadventures.ru/?s=6&p=007681";
 },40000);

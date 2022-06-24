@@ -9,7 +9,7 @@ document.querySelector("body").appendChild(button[1]);
 head.appendChild(style);
 
 if (localStorage.getItem('player') == 'youtube') {
-    flashObject.parentNode.replaceChild(generateChangerObject(link="youtube",width=flashObject.width,height=flashObject.height),flashObject);
+    flashObject.parentNode.replaceChild(generateChangerObject(link="https://www.youtube.com/embed/h3AQnFwFwbQ",width=flashObject.width,height=flashObject.height),flashObject);
 } else {
     flashObject.parentNode.replaceChild(generateChangerObject(link="https://vk.com/video_ext.php?oid=-207391948&id=456239248&hash=21ece7d54fd0f88c&hd=2",width=flashObject.width,height=flashObject.height),flashObject);
 };

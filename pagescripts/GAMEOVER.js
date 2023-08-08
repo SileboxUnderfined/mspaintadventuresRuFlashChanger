@@ -14,3 +14,10 @@ if (localStorage.getItem('player') == "vk") {
 };
 
 body.appendChild(creatorOfButtons(text="> АКТ 6 АКТ 6 АНТРАКТ 3",link="https://www.mspaintadventures.ru/?s=6&p=008802",id="next")[1]);
+
+let uniquePages = JSON.parse(localStorage.getItem('pages_unique_mspae'));
+if (!uniquePages.includes('GAMEOVER')) {
+    uniquePages.push('GAMEOVER');
+    localStorage.setItem('pages_unique_mspae',JSON.stringify(uniquePages));
+};
+localStorage.setItem('pages_count_mspae',Number(localStorage.getItem('pages_count_mspae'))+1);

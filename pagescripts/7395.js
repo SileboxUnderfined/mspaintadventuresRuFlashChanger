@@ -8,3 +8,10 @@ if (localStorage.getItem('player') == "vk") {
 setTimeout(function(){
     document.location.href = "https://www.mspaintadventures.ru/?s=6&p=007396";
 },40000);
+
+let uniquePages = JSON.parse(localStorage.getItem('pages_unique_mspae'));
+if (!uniquePages.includes('007395')) {
+    uniquePages.push('007395');
+    localStorage.setItem('pages_unique_mspae',JSON.stringify(uniquePages));
+};
+localStorage.setItem('pages_count_mspae',Number(localStorage.getItem('pages_count_mspae'))+1);

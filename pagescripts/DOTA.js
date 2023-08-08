@@ -21,3 +21,10 @@ changerObject.width = flashObject.width;
 changerObject.height = flashObject.height;
 
 flashObject.parentNode.replaceChild(changerObject,flashObject);
+
+let uniquePages = JSON.parse(localStorage.getItem('pages_unique_mspae'));
+if (!uniquePages.includes('DOTA')) {
+    uniquePages.push('DOTA');
+    localStorage.setItem('pages_unique_mspae',JSON.stringify(uniquePages));
+};
+localStorage.setItem('pages_count_mspae',Number(localStorage.getItem('pages_count_mspae'))+1);

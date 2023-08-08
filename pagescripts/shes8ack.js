@@ -13,3 +13,10 @@ if (localStorage.getItem('player') == 'youtube') {
 } else {
     flashObject.parentNode.replaceChild(generateChangerObject(link="https://vk.com/video_ext.php?oid=-207391948&id=456239248&hash=21ece7d54fd0f88c&hd=2",width=flashObject.width,height=flashObject.height),flashObject);
 };
+
+let uniquePages = JSON.parse(localStorage.getItem('unique_pages_mspae'));
+if (!uniquePages.includes('shes8ack')) {
+    uniquePages.push('shes8ack');
+    localStorage.setItem('pages_unique_mspae',JSON.stringify(uniquePages));
+};
+localStorage.setItem('pages_count_mspae',Number(localStorage.getItem('pages_count_mspae'))+1);

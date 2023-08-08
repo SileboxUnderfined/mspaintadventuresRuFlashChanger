@@ -1,7 +1,7 @@
 {
   "name": "MSPAEssentials",
   "description": "плагин первой необходимости для чтения homestuck на mspaintadventures.ru",
-  "version": "2.3",
+  "version": "3.0",
   "manifest_version": 3,
   "permissions": ["tabs"],
   "action": {
@@ -16,7 +16,8 @@
   "content_scripts":[
     {
       "matches":["https://www.mspaintadventures.ru/?s=6&p=*"],
-      "js":["js/GeneratePlayerObject.js","js/flashChanger.js","js/fontChangerMobile.js", "js/creatorOfButtons.js", "js/serviceButtons.js", "js/playerChanger.js"],
+      "js":["js/GeneratePlayerObject.js","js/flashChanger.js","js/fontChangerMobile.js", "js/creatorOfButtons.js", "js/serviceButtons.js", "js/playerChanger.js","js/pageCounter.js","js/additionalInterface.js"],
+      "css":["css/additional_interface.css"],
       "exclude_matches":["https://www.mspaintadventures.ru/?s=6&p=009535"]
     },
     {
@@ -177,6 +178,10 @@
     {
       "matches":["https://www.mspaintadventures.ru/?s=6&p=009348"],
       "js":["pagescripts/9348.js"]
+    },
+    {
+      "matches":["https://www.mspaintadventures.ru/endcredits.html"],
+      "js":["pagescripts/endcredits.js"]
     }
   ],
   "icons": {

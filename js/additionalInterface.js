@@ -1,11 +1,11 @@
 const mainDiv = document.createElement('div');
 mainDiv.className = 'add_int_mspae';
 
+let uniqueCount = JSON.parse(localStorage.getItem('pages_unique_mspae')).length;
 const pageCounter = document.createElement('p');
-pageCounter.textContent = `прочитано страниц: ${localStorage.getItem('pages_counter_mspae')}`;
+pageCounter.textContent = `прочитано страниц(всего/уникальных): ${localStorage.getItem('pages_counter_mspae')}/${uniqueCount}`;
 
 const playPercent = document.createElement('p');
-let uniqueCount = JSON.parse(localStorage.getItem('pages_unique_mspae')).length;
 let percentOfPlay = (uniqueCount / 8124) * 100;
 playPercent.textContent = `процент прохождения: ${percentOfPlay.toFixed(2)}%`
 

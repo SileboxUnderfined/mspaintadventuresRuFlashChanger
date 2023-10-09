@@ -1,28 +1,46 @@
-body {
-  font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+@font-face {
+  font-family: "Arial";
+  src: url(/fonts/Arial.ttf);
 }
 
 @font-face {
   font-family: "Arial";
-  src: url(fonts/Arial.ttf);
+  font-weight: bold;
+  src: url(/fonts/Arial_bold.ttf);
 }
 
 @font-face {
   font-family: "Helvetica";
-  src: url(fonts/Helvetica.otf);
+  src: url(/fonts/Helvetica.otf);
+}
+
+@font-face {
+  font-family: "Helvetica";
+  font-weight: bold;
+  src: url(/fonts/Helvetica_bold.ttf);
 }
 
 @font-face {
   font-family: "sans-serif";
-  src: url(fonts/SansSerif.ttf);
+  src: url(/fonts/SansSerif.ttf);
 }
 
 @font-face {
   font-family: "Courier New";
-  src: url(fonts/CourierNew.ttf);
+  src: url(/fonts/CourierNew.ttf);
 }
 
 @font-face {
   font-family: "Verdana";
-  src: url(fonts/Verdana.ttf);
+  src: url(/fonts/Verdana.ttf);
+}
+
+@font-face {
+  font-family: "Verdana";
+  font-weight: bold;
+  src: url(/fonts/Verdana_bold.ttf);
+}
+
+body {
+  font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
 }

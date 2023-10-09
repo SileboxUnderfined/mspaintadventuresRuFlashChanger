@@ -21,7 +21,13 @@ mainDiv.appendChild(pageCounter);
 mainDiv.appendChild(playPercent);
 if (readCount != null) { mainDiv.appendChild(readCountEl) };
 mainDiv.appendChild(clearStats);
-document.querySelector('span[style="font-size: 10px;"]').appendChild(mainDiv);
+
+if (document.querySelector('span[style="font-size: 10px;"]') != null) {
+    document.querySelector('span[style="font-size: 10px;"]').appendChild(mainDiv);
+} else if (document.querySelector('span.bottomlinks') != null) {
+    document.querySelector('span.bottomlinks').appendChild(mainDiv);
+    clearStats.style = "color: #2CFF3B"
+};
 
 clearStats.addEventListener("click",function(){
     if (confirm("Вы точно хотите очистить статистику?")) {
